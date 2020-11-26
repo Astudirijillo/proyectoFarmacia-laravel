@@ -14,16 +14,17 @@ class CreateUsuarioTable extends Migration
     public function up()
     {
         Schema::create('usuario', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('id')->primary();
             $table->string('primerNombre', 50);
             $table->string('apellidos',50);
-            $table->integer('idTipoDoc');
+            $table->integer('idTipoDoc')->unsigned();
             $table->char('nroDoc',15);
             $table->string('correoElectronico', 100);
             $table->char('contraseña', 16);
             $table->char('nroTelefonico', 12);
             $table->boolean('adminOpc');
             $table->timestamps();
+            $table->foreign('idTipoDoc')->references('id')->on('parametros');
         });
     }
 
