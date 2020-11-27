@@ -20,7 +20,7 @@ class CreateRetiroStockTable extends Migration
             $table->date('fechaRetiro');
             $table->longText('motivoRetiro');
             $table->integer('idUsuario');
-            $table->dateTime('fechacreacion');
+            $table->dateTime('fechaCreacion');
             $table->foreign('idUsuario')->references('id')->on('usuario');
             $table->timestamps();
         });

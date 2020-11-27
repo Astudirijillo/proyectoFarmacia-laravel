@@ -20,9 +20,8 @@ class CreateEntradaStockTable extends Migration
             $table->integer('cantRecibidas');
             $table->date('fechaRecepcion');
             $table->date('fechaVencimiento');
-            $table->date('fechaRecepcion');
             $table->integer('idUsuario');
-            $table->dateTime('fechacreacion');
+            $table->dateTime('fechaCreacion');
             $table->foreign('idUsuario')->references('id')->on('usuario');
             $table->timestamps();
         });
