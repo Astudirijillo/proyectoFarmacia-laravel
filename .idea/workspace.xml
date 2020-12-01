@@ -20,34 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69897f32-5511-4f1b-833b-99a08c4067ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/EntradaStockResources.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/ParametrosResources.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/ProductoResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/ProveedorResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/RetiroStockResources.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/UsuarioResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/EntradaStockSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/NroLoteSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/ParametrosSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/RetiroStockSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/SimbolosAsociadosSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/StockProductosSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/EntradaStockController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/NroLoteContoller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ParametrosController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductosController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProveedorController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RetiroStockController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/StockProductosController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/entradaStock.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/entradaStock.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/nroLote.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/nroLote.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/parametros.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/parametros.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/producto.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/producto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/proveedor.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/proveedor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/retiroStock.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/retiroStock.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/simboloAsociado.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/stockProducto.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/stockProducto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/usuario.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_20_211134_create_usuario_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_211134_create_usuario_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_20_211710_create_producto_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_211710_create_producto_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_26_195530_create_simbolos_asociados_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_26_201506_create_productos_simbolos_asociados_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +197,7 @@
       <workItem from="1606501420001" duration="317000" />
       <workItem from="1606505114405" duration="6881000" />
       <workItem from="1606587820067" duration="2183000" />
-      <workItem from="1606846517878" duration="2424000" />
+      <workItem from="1606846517878" duration="3034000" />
     </task>
     <task id="LOCAL-00001" summary="Creacion de tablas y seeders para las tablas creadas">
       <created>1605909797142</created>
@@ -239,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606514046792</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Se elimina la tabla de simbolos asociados y tabla puente con los productos, se crean los resources y models pendientes">
+      <created>1606849096829</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606849096829</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +253,8 @@
     <MESSAGE value="Creacion de tablas y seeders para las tablas creadas" />
     <MESSAGE value="Migraciones restantes creadas" />
     <MESSAGE value="Correciones posteriores y creacion de modelos por tabla" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correciones posteriores y creacion de modelos por tabla" />
+    <MESSAGE value="Se elimina la tabla de simbolos asociados y tabla puente con los productos, se crean los resources y models pendientes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se elimina la tabla de simbolos asociados y tabla puente con los productos, se crean los resources y models pendientes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="493" y="248" key="#Composer" timestamp="1605899657752">
@@ -276,10 +265,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="516" y="81" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738/-1920.-183.1536.834@0.0.1366.738" timestamp="1606847205530" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1606514058254">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1606849103698">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738/-1920.-183.1536.834@0.0.1366.738" timestamp="1606514058254" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738/-1920.-183.1536.834@0.0.1366.738" timestamp="1606849103698" />
     <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738/1366.-313.1536.834@0.0.1366.738" timestamp="1605909838751" />
     <state x="676" y="51" width="697" height="694" key="dock-window-1" timestamp="1606590143334">
       <screen x="0" y="0" width="1366" height="738" />
