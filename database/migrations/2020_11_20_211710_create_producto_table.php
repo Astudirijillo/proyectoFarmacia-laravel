@@ -20,7 +20,7 @@ class CreateProductoTable extends Migration
             $table->string('nombreCientifico', 50);
             $table->integer('idTipoProducto');
             $table->boolean('bioequivOpc');
-            $table->integer('idformaFarmaceutica');
+            $table->integer('idFormaFarmaceutica');
             $table->integer('simbolosAsociados');
             $table->timestamps();
         });

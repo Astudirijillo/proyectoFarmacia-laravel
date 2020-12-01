@@ -18,7 +18,7 @@ class CreateUsuarioTable extends Migration
             $table->string('primerNombre', 50);
             $table->string('apellidos',50);
             $table->integer('idTipoDoc')->unsigned();
-            $table->char('nroDoc',15);
+            $table->char('idTipoDoc',15);
             $table->string('correoElectronico', 100);
             $table->char('contraseña', 16);
             $table->char('nroTelefonico', 12);

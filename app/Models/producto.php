@@ -10,5 +10,5 @@ class producto extends Model
 {
     use HasFactory;
     protected $fillable = ['id', 'codProducto', 'marcaComercial', 'nombreCientifico',
-        'idTipoProducto', 'bioequivOpc', 'idformaFarmaceutica', 'simbolosAsociados'];
+        'idTipoProducto', 'bioequivOpc', 'idFormaFarmaceutica', 'simbolosAsociados'];
 }

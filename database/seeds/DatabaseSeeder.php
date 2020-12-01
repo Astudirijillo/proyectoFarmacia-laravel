@@ -15,6 +15,11 @@ class DatabaseSeeder extends Seeder
             ProductosSeeder::class,
             ProveedorSeeder::class,
             UsuariosSeeder::class,
+            EntradaStockSeeder::class,
+            RetiroStockSeeder::class,
+            NroLoteSeeder::class,
+            StockProductosSeeder::class,
+            ParametrosSeeder::class,
         ]);
     }
 }
