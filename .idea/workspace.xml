@@ -21,12 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="69897f32-5511-4f1b-833b-99a08c4067ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/EntradaStockResources.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/EntradaStockResources.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/NroLoteResources.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/NroLoteResources.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/ParametrosResources.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/ParametrosResources.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/RetiroStockResources.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/RetiroStockResources.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/StockProductosResources.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/StockProductosResources.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/stockProducto.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/stockProducto.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_20_211134_create_usuario_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_211134_create_usuario_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_20_211710_create_producto_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_211710_create_producto_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_20_211957_create_proveedor_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_211957_create_proveedor_table.php" afterDir="false" />
@@ -206,7 +200,7 @@
       <workItem from="1606846517878" duration="3580000" />
       <workItem from="1607103048429" duration="1947000" />
       <workItem from="1607453992143" duration="3175000" />
-      <workItem from="1607458535114" duration="2699000" />
+      <workItem from="1607458535114" duration="5155000" />
     </task>
     <task id="LOCAL-00001" summary="Creacion de tablas y seeders para las tablas creadas">
       <created>1605909797142</created>
@@ -243,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606849608410</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Ingreso info models y resources, correcciones a las migraciones de tablas.">
+      <created>1607462390610</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607462390610</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +272,7 @@
     <MESSAGE value="Correciones posteriores y creacion de modelos por tabla" />
     <MESSAGE value="Se elimina la tabla de simbolos asociados y tabla puente con los productos, se crean los resources y models pendientes" />
     <MESSAGE value="Se crean los archivos controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se crean los archivos controller" />
+    <MESSAGE value="Ingreso info models y resources, correcciones a las migraciones de tablas." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ingreso info models y resources, correcciones a las migraciones de tablas." />
   </component>
 </project>

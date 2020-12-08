@@ -17,7 +17,6 @@ class CreateParametrosTable extends Migration
             $table->id()->autoIncrement();
             $table->string('codigo', 50);
             $table->string('descripcion',100);
-            $table->timestamps();
         });
     }
 

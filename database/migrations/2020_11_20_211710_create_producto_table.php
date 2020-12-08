@@ -18,11 +18,13 @@ class CreateProductoTable extends Migration
             $table->char('codProducto');
             $table->string('marcaComercial', 50);
             $table->string('nombreCientifico', 50);
-            $table->integer('idTipoProducto');
+            $table->unsignedInteger('idTipoProducto')->constrained('parametros');
             $table->boolean('bioequivOpc');
-            $table->integer('idFormaFarmaceutica');
+            $table->unsignedInteger('idFormaFarmaceutica')->constrained('parametros');
             $table->integer('simbolosAsociados');
-            $table->timestamps();
+            $table->unsignedInteger('idUsuario')->constrained('usuario');
+            $table->date('fechaCreacion');
+            $table->date('fechaModificacion');
         });
     }
 
