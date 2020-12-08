@@ -14,17 +14,16 @@ class CreateStockProductosTable extends Migration
     public function up()
     {
         Schema::create('stock_productos', function (Blueprint $table) {
-            $table->increments('id')->primary();
+            $table->id()->autoIncrement();
             $table->char('codProducto',18);
             $table->char('undStock');
             $table->char('rutProveedor',20);
-            $table->char('nroLoteIngreso');
             $table->date('fechaVencimiento');
             $table->integer('idUsuario');
             $table->date('fechaCreacion');
-            $table->foreign('idUsuario')->references('id')->on('usuario');
             $table->date('fechaModificacion');
-            $table->timestamps();
+            $table->foreign('idUsuario')->references('id')->on('usuario');
+
         });
     }
 

@@ -14,6 +14,14 @@ class RetiroStockResources extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'id'=>$this.id,
+            'codProducto'=>$this.codProducto,
+            'cantRetirada'=>$this.cantRetirada,
+            'fechaRetiro'=>$this.fechaRetiro,
+            'motivoRetiro'=>$this.motivoRetiro,
+            'idUsuario'=>$this.idUsuario,
+            'fechaCreacion'=>$this.fechaCreacion,
+        ];
     }
 }

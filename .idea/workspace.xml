@@ -20,15 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69897f32-5511-4f1b-833b-99a08c4067ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/EntradaStockController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/NroLoteContoller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ParametrosController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductosController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProveedorController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RetiroStockController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/StockProductosController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/EntradaStockResources.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/EntradaStockResources.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/NroLoteResources.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/NroLoteResources.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/ParametrosResources.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/ParametrosResources.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/RetiroStockResources.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/RetiroStockResources.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/StockProductosResources.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/StockProductosResources.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/stockProducto.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/stockProducto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_20_211134_create_usuario_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_211134_create_usuario_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_20_211710_create_producto_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_211710_create_producto_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_20_211957_create_proveedor_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_211957_create_proveedor_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_20_212213_create_parametros_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_212213_create_parametros_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_26_185550_create_entrada_stock_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_26_185550_create_entrada_stock_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_26_192132_create_retiro_stock_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_26_192132_create_retiro_stock_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_26_195815_create_nro_lote_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_26_195815_create_nro_lote_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_26_200522_create_stock_productos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_26_200522_create_stock_productos_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +203,10 @@
       <workItem from="1606501420001" duration="317000" />
       <workItem from="1606505114405" duration="6881000" />
       <workItem from="1606587820067" duration="2183000" />
-      <workItem from="1606846517878" duration="3034000" />
+      <workItem from="1606846517878" duration="3580000" />
+      <workItem from="1607103048429" duration="1947000" />
+      <workItem from="1607453992143" duration="3175000" />
+      <workItem from="1607458535114" duration="2699000" />
     </task>
     <task id="LOCAL-00001" summary="Creacion de tablas y seeders para las tablas creadas">
       <created>1605909797142</created>
@@ -227,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606849096829</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Se crean los archivos controller">
+      <created>1606849608410</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606849608410</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,34 +270,7 @@
     <MESSAGE value="Migraciones restantes creadas" />
     <MESSAGE value="Correciones posteriores y creacion de modelos por tabla" />
     <MESSAGE value="Se elimina la tabla de simbolos asociados y tabla puente con los productos, se crean los resources y models pendientes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se elimina la tabla de simbolos asociados y tabla puente con los productos, se crean los resources y models pendientes" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="493" y="248" key="#Composer" timestamp="1605899657752">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="493" y="248" key="#Composer/0.0.1366.738/1366.-313.1536.834@0.0.1366.738" timestamp="1605899657752" />
-    <state x="516" y="81" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606847205530">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="516" y="81" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738/-1920.-183.1536.834@0.0.1366.738" timestamp="1606847205530" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1606849103698">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738/-1920.-183.1536.834@0.0.1366.738" timestamp="1606849103698" />
-    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738/1366.-313.1536.834@0.0.1366.738" timestamp="1605909838751" />
-    <state x="676" y="51" width="697" height="694" key="dock-window-1" timestamp="1606590143334">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="676" y="51" width="697" height="694" key="dock-window-1/0.0.1366.738/-1920.-183.1536.834@0.0.1366.738" timestamp="1606590143334" />
-    <state x="423" y="270" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1606421939014">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="423" y="270" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.738/-1920.-183.1536.834@0.0.1366.738" timestamp="1606421939014" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1606509937723">
-      <screen x="0" y="0" width="1366" height="738" />
-    </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738/-1920.-183.1536.834@0.0.1366.738" timestamp="1606509937723" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738/1366.-313.1536.834@0.0.1366.738" timestamp="1605914520700" />
+    <MESSAGE value="Se crean los archivos controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se crean los archivos controller" />
   </component>
 </project>

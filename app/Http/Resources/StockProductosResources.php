@@ -14,6 +14,15 @@ class StockProductosResources extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'id'=>$this.id,
+            'codProducto'=>$this.codProducto,
+            'undStock'=>$this.rutProveedor,
+            'fechaVencimiento'=>$this.fechaVencimiento,
+            'idUsuario'=>$this.idUsuario,
+            'fechaCreacion'=>$this.fechaCreacion,
+            'fechaModificacion'=>$this.fechaModificacion,
+
+        ];
     }
 }

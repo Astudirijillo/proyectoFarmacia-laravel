@@ -14,7 +14,7 @@ class CreateRetiroStockTable extends Migration
     public function up()
     {
         Schema::create('retiro_stock', function (Blueprint $table) {
-            $table->increments('id')->primary();
+            $table->id()->autoIncrement();
             $table->char('codProducto', 20);
             $table->integer('cantRetirada');
             $table->date('fechaRetiro');
@@ -22,7 +22,6 @@ class CreateRetiroStockTable extends Migration
             $table->integer('idUsuario');
             $table->dateTime('fechaCreacion');
             $table->foreign('idUsuario')->references('id')->on('usuario');
-            $table->timestamps();
         });
     }
 

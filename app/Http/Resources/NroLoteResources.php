@@ -14,6 +14,10 @@ class NroLoteResources extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'id'=>$this.id,
+            'idEntradaStock'=>$this.idEntradaStock,
+            'nroLote'=>$this.nroLote,
+        ];
     }
 }

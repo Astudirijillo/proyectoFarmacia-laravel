@@ -14,7 +14,7 @@ class CreateNroLoteTable extends Migration
     public function up()
     {
         Schema::create('nro_lote', function (Blueprint $table) {
-            $table->integer('id')->primary();
+            $table->id()->autoIncrement();
             $table->integer('idEntradaStock');
             $table->char('nroLote',50);
         });

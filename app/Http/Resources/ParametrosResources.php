@@ -14,6 +14,10 @@ class ParametrosResources extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'id'=>$this.id,
+            'codigo'=>$this.codigo,
+            'descripcion'=>$this.descripcion,
+        ];
     }
 }

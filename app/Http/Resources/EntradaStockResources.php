@@ -14,6 +14,15 @@ class EntradaStockResources extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'id'=>$this.id,
+            'codProducto'=>$this.codProducto,
+            'rutProveedor'=>$this.rutProveedor,
+            'cantRecibidas'=>$this.cantRecibida,
+            'fechaRecepcion'=>$this.fechaRecepcion,
+            'fechaVencimiento'=>$this.fechaVencimiento,
+            'idUsuario'=>$this.idUsuario,
+            'fechaCreacion'=>$this.fechaCreacion,
+        ];
     }
 }
