@@ -22,7 +22,6 @@ class CreateStockProductosTable extends Migration
             $table->unsignedInteger('idUsuario')->constrained('usuario');
             $table->date('fechaCreacion');
             $table->date('fechaModificacion');
-
         });
     }
 

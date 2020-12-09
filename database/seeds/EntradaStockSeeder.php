@@ -18,7 +18,13 @@ class EntradaStockSeeder extends Seeder
 
         foreach (range(1,20) as $index) {
             $entradaStock[] = [
-
+                'codProducto'=> $faker -> randomDigit(111111111111111111)*999999999999999999,
+                'rutProveedor' => "11.11$index.11$index-1",
+                'cantRecibida' => $faker -> randomDigit(1)*150,
+                'fechaRecepcion' => now(),
+                'fechaVencimiento' => $faker -> date('d-m-Y', '31-12-2030'),
+                'idUsuario' => "$index",
+                'fechaCreacion' => now(),
             ];
         }
     }

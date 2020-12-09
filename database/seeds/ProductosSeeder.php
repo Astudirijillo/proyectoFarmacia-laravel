@@ -18,10 +18,11 @@ class ProductosSeeder extends Seeder
 
         foreach (range(1,20) as $index){
             $products[] = [
-                'name' => "Product $index",
-                'price' => $faker->randomDigit(0)*100,
-                'created_at' => now(),
-                'updated_at' => now(),
+                'codProducto'=> $faker -> randomDigit(111111111111111111)*999999999999999999,
+                'marcaComercial' => $faker -> name,
+                'nombreCientifico' => $faker -> name,
+                'biequivOpc' => $faker -> boolean,
+
             ];
         }
         DB::table('products')->insert($products);
