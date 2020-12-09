@@ -15,7 +15,7 @@ class CreateEntradaStockTable extends Migration
     {
         Schema::create('entrada_stock', function (Blueprint $table) {
             $table->id()->autoIncrement();
-            $table->char('codProducto', 20);
+            $table->char('codProducto', 13);
             $table->char('rutProveedor', 20);
             $table->integer('cantRecibida');
             $table->date('fechaRecepcion');
