@@ -15,7 +15,9 @@ class CreateSimbolosAsociadosTable extends Migration
     {
         Schema::create('simbolos_asociados', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->char('codigo',5);
+            $table->char('tipo',50);
+            $table->char('descripcion',5);
         });
     }
 
