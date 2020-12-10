@@ -10,31 +10,39 @@ class StockProductosController extends Controller
 {
     public function index()
     {
-
+        $stockProductos = StockProductos::orderBy('id') -> get();
+        return StockProductosResources::collection($stockProductos);
     }
 
-    public function show()
+    public function show(StockProductos $stockProductos)
     {
-
+        return new StockProductosResources($stockProductos);
     }
 
     public function validateRequest()
     {
+        return request() -> validate([
 
+        ]);
     }
 
     public function store()
     {
-
+        $data = $this->validateRequest();
+        $stockProductos = StockProductos::create($data);
+        return new StockProductosResources($stockProductos);
     }
 
-    public function update()
+    public function update(StockProductos $stockProductos)
     {
-
+        $data = $this->validateRequest();
+        $stockProductos -> update($data);
+        return new StockProductosResources($stockProductos);
     }
 
-    public function destroy()
+    public function destroy(StockProductos $stockProductos)
     {
-
+        $stockProductos -> delete();
+        return response() -> noContent();
     }
 }

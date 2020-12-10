@@ -10,32 +10,39 @@ class ProductosController extends Controller
 {
     public function index()
     {
-
+        $producto = Producto::orderBy('codProducto')->get();
+        return ProductoResource::collection($producto);
     }
 
-    public function show()
+    public function show(ProductoResource $producto)
     {
-
+        return new ProductoResource($producto);
     }
 
     public function validateRequest()
     {
+        return request()->validate([
 
+        ]);
     }
 
     public function store()
     {
-
+        $data = $this->validateRequest();
+        $producto = Producto::create($data);
+        return new ProductoResource($producto);
     }
 
-    public function update()
+    public function update(Producto $producto)
     {
-
+        $data = $this->validateRequest();
+        $producto -> update($data);
+        return new ProductoResource($producto);
     }
 
-
-    public function destroy()
+    public function destroy(Producto $producto)
     {
-
+        $producto -> delete();
+        return response() -> noContent();
     }
 }

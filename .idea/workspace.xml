@@ -20,16 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69897f32-5511-4f1b-833b-99a08c4067ab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_09_200501_create_producto_simbolos_asociados_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_09_200843_create_simbolos_asociados_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EntradaStockController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EntradaStockController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NroLoteContoller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NroLoteContoller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ParametrosController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductosController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProveedorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProveedorController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RetiroStockController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RetiroStockController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StockProductosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StockProductosController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_26_185550_create_entrada_stock_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_26_185550_create_entrada_stock_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +204,8 @@
       <workItem from="1607458535114" duration="6048000" />
       <workItem from="1607466466837" duration="1879000" />
       <workItem from="1607533617676" duration="2803000" />
-      <workItem from="1607540731251" duration="2050000" />
+      <workItem from="1607540731251" duration="4398000" />
+      <workItem from="1607621878699" duration="2061000" />
     </task>
     <task id="LOCAL-00001" summary="Creacion de tablas y seeders para las tablas creadas">
       <created>1605909797142</created>
@@ -263,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607539936702</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Modificacion controladores">
+      <created>1607542838574</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607542838574</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,6 +301,7 @@
     <MESSAGE value="Ingreso info models y resources, correcciones a las migraciones de tablas." />
     <MESSAGE value="Correcciones a las migraciones y la creacion de tablas en la base de datos." />
     <MESSAGE value="Correcciones seeders y termino de creacion de algunos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correcciones seeders y termino de creacion de algunos" />
+    <MESSAGE value="Modificacion controladores" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificacion controladores" />
   </component>
 </project>
