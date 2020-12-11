@@ -18,7 +18,8 @@ class SimbolosAsociadosSeeder extends Seeder
 
         foreach (range(1,20) as $index){
             $simbolosAsociados[] = [
-
+                'idProducto'=> $faker -> randomDigit(1)* 20,
+                'idSimbolo' =>$faker -> randomDigit(1)* 6,
             ];
         }
     }

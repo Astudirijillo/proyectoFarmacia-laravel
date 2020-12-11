@@ -21,7 +21,6 @@ class CreateProductoTable extends Migration
             $table->unsignedInteger('idTipoProducto')->constrained('parametros');
             $table->boolean('bioequivOpc');
             $table->unsignedInteger('idFormaFarmaceutica')->constrained('parametros');
-            $table->integer('simbolosAsociados');
             $table->unsignedInteger('idUsuario')->constrained('usuario');
             $table->date('fechaCreacion');
             $table->date('fechaModificacion');
