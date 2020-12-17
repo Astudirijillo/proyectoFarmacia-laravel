@@ -17,14 +17,21 @@ class ProveedorController extends Controller
 
     public function show(Proveedor $proveedor)
     {
-        return new ProveedroResource($proveedor);
+        return new ProveedorResource($proveedor);
 
     }
 
     public function validateRequest()
     {
         return request()->validate([
-
+            'razonSocial' => 'required|max:50',
+            'rutEmpresa' => 'required|max:18',
+            'nroTelefoncio' => 'required|max:20',
+            'correoElectronico' => 'required|min:40|max:50',
+            'direccion' => 'required|min:25|max:50',
+            'idUsuario' => 'required|integer',
+            'fechaCreacion' => 'required|datetime',
+            'fechaModificacion' => 'required|datetime',
         ]);
     }
 

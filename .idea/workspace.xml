@@ -20,15 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69897f32-5511-4f1b-833b-99a08c4067ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductosSimbolosAsociadosController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/ProductoSimboloAsociadoResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/SimboloAsociadoResources.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/ProductoSimboloAsociado.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/SimboloAsociado.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/ProductoSimboloAsociadoSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_20_211710_create_producto_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_211710_create_producto_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EntradaStockController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EntradaStockController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NroLoteContoller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductosSimbolosAsociadosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductosSimbolosAsociadosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProveedorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProveedorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RetiroStockController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RetiroStockController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StockProductosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StockProductosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/NroLoteResources.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/nroLote.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_20_212213_create_parametros_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_212213_create_parametros_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_26_185550_create_entrada_stock_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_26_185550_create_entrada_stock_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_26_195815_create_nro_lote_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_09_200501_create_producto_simbolos_asociados_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_09_200501_create_producto_simbolos_asociados_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/NroLoteSeeder.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +214,10 @@
       <workItem from="1607533617676" duration="2803000" />
       <workItem from="1607540731251" duration="4398000" />
       <workItem from="1607621878699" duration="3240000" />
-      <workItem from="1607719544355" duration="2467000" />
+      <workItem from="1607719544355" duration="5540000" />
+      <workItem from="1607873481767" duration="833000" />
+      <workItem from="1607887177990" duration="603000" />
+      <workItem from="1608214597298" duration="4909000" />
     </task>
     <task id="LOCAL-00001" summary="Creacion de tablas y seeders para las tablas creadas">
       <created>1605909797142</created>
@@ -285,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607625025544</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Creacion seeders, modelos y resources para SimbolosAsociados y ProductoSimboloAsociado">
+      <created>1607722493250</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1607722493251</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,6 +337,7 @@
     <MESSAGE value="Modificacion controladores" />
     <MESSAGE value="Correcciones controllers y creacion de CRUD basico, faltan validaciones de informacion ingresada" />
     <MESSAGE value="Creaciones tablas faltantes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creaciones tablas faltantes" />
+    <MESSAGE value="Creacion seeders, modelos y resources para SimbolosAsociados y ProductoSimboloAsociado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creacion seeders, modelos y resources para SimbolosAsociados y ProductoSimboloAsociado" />
   </component>
 </project>

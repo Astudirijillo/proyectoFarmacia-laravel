@@ -22,7 +22,14 @@ class UsuarioController extends Controller
     public function validateRequest()
     {
         return request() -> validate([
-
+            'nombre' => 'required|max:50',
+            'apellidos' => 'required|max:50',
+            'nroTelefonico' => 'required|max:15',
+            'idTipoDocumento' => 'required|integer',
+            'nroDocumento' => 'required|max:15',
+            'correoElectronico' => 'required|max:15',
+            'contraseña' => 'required|max:16',
+            'esAdministrador' => 'required|boolean',
         ]);
     }
 

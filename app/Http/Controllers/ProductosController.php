@@ -22,7 +22,15 @@ class ProductosController extends Controller
     public function validateRequest()
     {
         return request()->validate([
-
+            'codProducto' => 'required|min:13|max:14',
+            'marcaComercial' => 'required|max:50',
+            'nombreCientifico' => 'required|max:50',
+            'idTipoProducto' => 'required|integer',
+            'esBioequivalente' => 'required|boolean',
+            'idFormatoFarmaceutico' => 'required|integer',
+            'idUsuario' => 'required|integer',
+            'fechaCreacion' => 'required|datetime',
+            'fechaModificacion' => 'required|datetime',
         ]);
     }
 

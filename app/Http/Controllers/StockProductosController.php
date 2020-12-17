@@ -22,7 +22,13 @@ class StockProductosController extends Controller
     public function validateRequest()
     {
         return request() -> validate([
-
+            'codProducto' => 'required|max:18',
+            'undStock' => 'required|integer',
+            'rutProveedor' => 'required|max:20',
+            'fechaVencimiento' => 'required|date',
+            'idUsuario' => 'required|integer',
+            'fechaCreacion' => 'required|date',
+            'fechaVencimiento' => 'required|date',
         ]);
     }
 

@@ -22,9 +22,13 @@ class EntradaStockController extends Controller
     public function validateRequest()
     {
         return request()->validate([
-            'codProducto' => 'required|max:14',
-            'rutProveedor' => 'required|min:9|max:10',
-
+            'rutProveedor' => 'required|min:13',
+            'codProducto' => 'required|min:13|max:14',
+            'undRecibidas' => 'required|min:1',
+            'fechaRecepcion' => 'required|date',
+            'fechaVencimiento' => 'required|date',
+            'idUsuario' => 'required|integer',
+            'fechaCreacion' => 'required|date',
         ]);
     }
 
