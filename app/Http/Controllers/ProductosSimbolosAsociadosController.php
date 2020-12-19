@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Resources\ProductoResource;
 use Illuminate\Http\Request;
 use App\Http\Resources\ProductoSimboloAsociadoResource;
-use App\Http\Models\ProductoSimboloAsociado;
+use App\Models\ProductoSimboloAsociado;
 
 class ProductosSimbolosAsociadosController extends Controller
 {
@@ -20,7 +20,7 @@ class ProductosSimbolosAsociadosController extends Controller
         return new ProductoSimboloAsociadoResource($productoSimboloAsociado);
     }
 
-    public function validateRequest()
+    protected function validateRequest()
     {
         return request()->validate([
             'idProducto' => 'required|integer',

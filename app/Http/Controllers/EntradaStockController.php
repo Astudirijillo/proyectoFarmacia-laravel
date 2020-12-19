@@ -2,26 +2,26 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\entradaStock;
 use Illuminate\Http\Request;
 use App\Http\Resources\EntradaStockResources;
+use App\Models\entradaStock;
 
 class EntradaStockController extends Controller
 {
     public function index()
     {
-        $entradaStock = entradaStock::orderby('id')->get();
-        return EntradaStockResources::collection($entradaStock);
+        $entradasStock = entradaStock::orderby('codProducto')->get();
+        return EntradaStockResources::collection($entradasStock);
     }
 
-    public function show(EntradaStockResources $entradaStock)
+    public function show(EntradaStockResources $entradasStock)
     {
-        return new EntradaStockResources($entradaStock);
+        return new EntradaStockResources($entradasStock);
     }
 
-    public function validateRequest()
+    protected function validateRequest()
     {
-        return request()->validate([
+        return request() -> validate([
             'rutProveedor' => 'required|min:13',
             'codProducto' => 'required|min:13|max:14',
             'undRecibidas' => 'required|min:1',
@@ -35,20 +35,20 @@ class EntradaStockController extends Controller
     public function store()
     {
         $data = $this->validateRequest();
-        $entradaStock = EntradaStock::create($data);
-        return new EntradaStockResources($entradaStock);
+        $entradasStock = EntradaStock::create($data);
+        return new EntradaStockResources($entradasStock);
     }
 
-    public function update(entradaStock $entradaStock)
+    public function update(entradaStock $entradasStock)
     {
         $data = $this->validateRequest();
-        $entradaStock -> update($data);
-        return new EntradaStockResources($entradaStock);
+        $entradasStock -> update($data);
+        return new EntradaStockResources($entradasStock);
     }
 
-    public function destroy(entradaStock $entradaStock)
+    public function destroy(entradaStock $entradasStock)
     {
-        $entradaStock -> delete();
+        $entradasStock -> delete();
         return response() -> noContent();
     }
 }

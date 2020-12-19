@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Resources\ProductoResource;
-use App\Http\models\Producto;
+use App\Models\Producto;
 
 class ProductosController extends Controller
 {
@@ -19,7 +19,7 @@ class ProductosController extends Controller
         return new ProductoResource($producto);
     }
 
-    public function validateRequest()
+    protected function validateRequest()
     {
         return request()->validate([
             'codProducto' => 'required|min:13|max:14',

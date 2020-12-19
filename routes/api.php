@@ -18,10 +18,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/entradaStocks', 'EntradaStockController');
-Route::get('/productos', 'ProductosController');
-Route::get('/productosSimbolosAsociados', 'ProductosSimbolosAsocidoController');
-Route::get('/proveedores', 'ProveedorController');
-Route::get('/stockProductos', 'StockProductosController');
-Route::get('/usuarios', 'UsuarioController');
+Route::apiResource('/entradaStock', 'EntradaStockController');
+Route::apiResource('/productos', 'ProductosController');
+Route::apiResource('/productosSimbolosAsociados', 'ProductosSimbolosAsocidoController');
+Route::apiResource('/proveedores', 'ProveedorController');
+Route::apiResource('/stockProductos', 'StockProductosController');
+Route::apiResource('/usuarios', 'UsuarioController');
 

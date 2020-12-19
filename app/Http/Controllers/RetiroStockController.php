@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Resources\RetiroStockResources;
-use App\Http\Models\RetiroStock;
+use App\Models\RetiroStock;
 
 class RetiroStockController extends Controller
 {
@@ -19,7 +19,7 @@ class RetiroStockController extends Controller
         return new RetiroStockResources($retiroStock);
     }
 
-    public function validateRequest()
+    protected function validateRequest()
     {
         return request() -> validate([
             'codProducto' => 'required|max:18',

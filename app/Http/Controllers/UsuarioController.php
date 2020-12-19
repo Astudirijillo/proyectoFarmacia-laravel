@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Usuario;
 use Illuminate\Http\Request;
 use App\Http\Resources\UsuarioResource;
-use App\Http\Models\Usuario;
 
 class UsuarioController extends Controller
 {
@@ -19,7 +19,7 @@ class UsuarioController extends Controller
         return new UsuarioResource($usuario);
     }
 
-    public function validateRequest()
+    protected function validateRequest()
     {
         return request() -> validate([
             'nombre' => 'required|max:50',

@@ -21,6 +21,15 @@
   <component name="ChangeListManager">
     <list default="true" id="69897f32-5511-4f1b-833b-99a08c4067ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EntradaStockController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EntradaStockController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductosSimbolosAsociadosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductosSimbolosAsociadosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProveedorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProveedorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RetiroStockController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RetiroStockController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StockProductosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StockProductosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -156,7 +165,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../proyecto_farmacia" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -203,7 +212,8 @@
       <workItem from="1607719544355" duration="5540000" />
       <workItem from="1607873481767" duration="833000" />
       <workItem from="1607887177990" duration="603000" />
-      <workItem from="1608214597298" duration="7692000" />
+      <workItem from="1608214597298" duration="9791000" />
+      <workItem from="1608318333415" duration="11448000" />
     </task>
     <task id="LOCAL-00001" summary="Creacion de tablas y seeders para las tablas creadas">
       <created>1605909797142</created>
@@ -296,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608219709394</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Se crean rutas de controladores junto con agregarlas a la API.">
+      <created>1608222514680</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1608222514680</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +327,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -332,6 +361,18 @@
     <MESSAGE value="Creaciones tablas faltantes" />
     <MESSAGE value="Creacion seeders, modelos y resources para SimbolosAsociados y ProductoSimboloAsociado" />
     <MESSAGE value="Correcciones migraciones, se borra todo lo relacionado con nroLote ademas de agregar lo que faltaba en controladores" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correcciones migraciones, se borra todo lo relacionado con nroLote ademas de agregar lo que faltaba en controladores" />
+    <MESSAGE value="Se crean rutas de controladores junto con agregarlas a la API." />
+    <option name="LAST_COMMIT_MESSAGE" value="Se crean rutas de controladores junto con agregarlas a la API." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php</url>
+          <line>30</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

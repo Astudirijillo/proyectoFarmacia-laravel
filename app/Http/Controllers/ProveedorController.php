@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Resources\ProductoResource;
 use Illuminate\Http\Request;
 use App\Http\Resources\ProveedorResource;
-use App\Http\Models\Proveedor;
+use App\Models\Proveedor;
 
 class ProveedorController extends Controller
 {
@@ -21,7 +21,7 @@ class ProveedorController extends Controller
 
     }
 
-    public function validateRequest()
+    protected function validateRequest()
     {
         return request()->validate([
             'razonSocial' => 'required|max:50',
