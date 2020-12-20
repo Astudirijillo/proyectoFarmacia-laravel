@@ -24,4 +24,3 @@ Route::apiResource('/productosSimbolosAsociados', 'ProductosSimbolosAsocidoContr
 Route::apiResource('/proveedores', 'ProveedorController');
 Route::apiResource('/stockProductos', 'StockProductosController');
 Route::apiResource('/usuarios', 'UsuarioController');
-

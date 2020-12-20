@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class retiroStock extends Model
 {
     use HasFactory;
-    protected $fillable = ['id', 'codProducto', 'cantRetirada', 'fechaRetiro',
-        'motivoRetiro', 'idUsuario', 'fechaCreacion'];
+    protected $fillable = ['id', 'primerNombre', 'apellidos', 'idTipoDoc', 'nroDoc',
+        'correoElectronico', 'contraseña','nroTelefonico', 'adminOpc'];
 }

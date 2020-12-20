@@ -22,7 +22,6 @@ class StockProductosResources extends JsonResource
             'idUsuario'=>$this.idUsuario,
             'fechaCreacion'=>$this.fechaCreacion,
             'fechaModificacion'=>$this.fechaModificacion,
-
         ];
     }
 }

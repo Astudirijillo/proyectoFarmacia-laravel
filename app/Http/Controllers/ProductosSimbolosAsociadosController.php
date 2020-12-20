@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Resources\ProductoResource;
 use Illuminate\Http\Request;
 use App\Http\Resources\ProductoSimboloAsociadoResource;
 use App\Models\ProductoSimboloAsociado;
