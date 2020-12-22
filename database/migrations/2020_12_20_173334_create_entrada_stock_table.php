@@ -15,6 +15,11 @@ class CreateEntradaStockTable extends Migration
     {
         Schema::create('entrada_stock', function (Blueprint $table) {
             $table->id();
+            $table->char('rutProveedor', 20);
+            $table->integer('codProducto');
+            $table->integer('undRecibidas');
+            $table->date('fechaRecepcion');
+            $table->date('fechaVencimiento');
             $table->timestamps();
         });
     }

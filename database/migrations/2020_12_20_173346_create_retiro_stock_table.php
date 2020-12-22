@@ -19,9 +19,7 @@ class CreateRetiroStockTable extends Migration
             $table->integer('cantRetirada');
             $table->date('fechaRetiro');
             $table->longText('motivoRetiro');
-            $table->unsignedInteger('idUsuario')->constrained('usuario');
-            $table->date('fechaCreacion');
-            $table->date('fechaModificacion');
+            $table->timestamps();
         });
     }
 

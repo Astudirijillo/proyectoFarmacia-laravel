@@ -23,9 +23,6 @@ class ProveedorSeeder extends Seeder
                 'correoElectronico' => $faker->unique()->safeEmail,
                 'direccion' => $faker->name,
                 'nroTelefonico' => $faker->randomElement(['Calle falsa 123', 'Zacarias Cuetes S/N', 'Av. Bernardo OHiggins 652']),
-                'idUsuario' => $faker->usuario::inRandomOrder()->value('id') ?: factory(Professional::class),
-                'fechaCreacion' => now(),
-                'fechaModificacion' => $faker -> date('d-m-Y', '31-12-2030'),
             ];
         }
     }

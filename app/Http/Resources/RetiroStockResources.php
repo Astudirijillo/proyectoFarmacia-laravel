@@ -20,8 +20,6 @@ class RetiroStockResources extends JsonResource
             'cantRetirada'=>$this.cantRetirada,
             'fechaRetiro'=>$this.fechaRetiro,
             'motivoRetiro'=>$this.motivoRetiro,
-            'idUsuario'=>$this.idUsuario,
-            'fechaCreacion'=>$this.fechaCreacion,
         ];
     }
 }

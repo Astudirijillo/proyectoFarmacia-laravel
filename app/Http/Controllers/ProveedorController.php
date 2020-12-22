@@ -18,20 +18,16 @@ class ProveedorController extends Controller
     public function show(Proveedor $proveedor)
     {
         return new ProveedorResource($proveedor);
-
     }
 
     protected function validateRequest()
     {
         return request()->validate([
             'razonSocial' => 'required|max:50',
-            'rutEmpresa' => 'required|max:18',
-            'nroTelefoncio' => 'required|max:20',
-            'correoElectronico' => 'required|min:40|max:50',
-            'direccion' => 'required|min:25|max:50',
-            'idUsuario' => 'required|integer',
-            'fechaCreacion' => 'required|datetime',
-            'fechaModificacion' => 'required|datetime',
+            'rut' => 'required|max:18',
+            'nroTelefonico' => 'required|max:20',
+            'correoElectronico' => 'required|max:50',
+            'direccion' => 'required|max:50',
         ]);
     }
 

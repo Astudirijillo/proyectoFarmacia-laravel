@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class ProductoSimboloAsociado extends Model
 {
+    protected $table = 'productoSimbolosAsociado';
     use HasFactory;
     protected $fillable = ['idProducto','idSimbolo'];
 }

@@ -25,10 +25,7 @@ class ProductosController extends Controller
             'nombreCientifico' => 'required|max:50',
             'idTipoProducto' => 'required|integer',
             'esBioequivalente' => 'required|boolean',
-            'idFormatoFarmaceutico' => 'required|integer',
-            'idUsuario' => 'required|integer',
-            'fechaCreacion' => 'required|datetime',
-            'fechaModificacion' => 'required|datetime',
+            'idFormaFarmaceutica' => 'required|integer',
         ]);
     }
 

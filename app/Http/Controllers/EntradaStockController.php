@@ -10,7 +10,7 @@ class EntradaStockController extends Controller
 {
     public function index()
     {
-        $entradasStock = entradaStock::orderby('codProducto')->get();
+        $entradasStock = entradaStock::orderby('rutProveedor')->get();
         return EntradaStockResources::collection($entradasStock);
     }
 
@@ -27,8 +27,6 @@ class EntradaStockController extends Controller
             'undRecibidas' => 'required|min:1',
             'fechaRecepcion' => 'required|date',
             'fechaVencimiento' => 'required|date',
-            'idUsuario' => 'required|integer',
-            'fechaCreacion' => 'required|date',
         ]);
     }
 

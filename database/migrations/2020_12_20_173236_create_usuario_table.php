@@ -17,12 +17,13 @@ class CreateUsuarioTable extends Migration
             $table->id()->autoIncrement();
             $table->string('primerNombre', 50);
             $table->string('apellidos',100);
-            $table->unsignedInteger('idTipoDoc')->constrained('parametros');
+            $table->Integer('idTipoDoc')->constrained('parametros')->nullable();
             $table->char('nroDocumento',15);
             $table->string('correoElectronico', 100);
             $table->char('contraseña', 16);
             $table->char('nroTelefonico', 12);
             $table->boolean('adminOpc');
+            $table->timestamps();
         });
     }
 

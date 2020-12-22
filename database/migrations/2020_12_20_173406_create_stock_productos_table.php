@@ -19,9 +19,7 @@ class CreateStockProductosTable extends Migration
             $table->char('undStock');
             $table->char('rutProveedor',20);
             $table->date('fechaVencimiento');
-            $table->unsignedInteger('idUsuario')->constrained('usuario');
-            $table->date('fechaCreacion');
-            $table->date('fechaModificacion');
+            $table->timestamps();
         });
     }
 

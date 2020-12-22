@@ -10,7 +10,7 @@ class StockProductosController extends Controller
 {
     public function index()
     {
-        $stockProductos = StockProductos::orderBy('id') -> get();
+        $stockProductos = StockProductos::orderBy('codProducto') -> get();
         return StockProductosResources::collection($stockProductos);
     }
 
@@ -25,9 +25,6 @@ class StockProductosController extends Controller
             'codProducto' => 'required|max:18',
             'undStock' => 'required|integer',
             'rutProveedor' => 'required|max:20',
-            'fechaVencimiento' => 'required|date',
-            'idUsuario' => 'required|integer',
-            'fechaCreacion' => 'required|date',
             'fechaVencimiento' => 'required|date',
         ]);
     }

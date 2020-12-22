@@ -22,9 +22,6 @@ class RetiroStockSeeder extends Seeder
                 'cantRetirada' => $faker -> randomDigit(1)*150,
                 'fechaRetiro' => now(),
                 'motivoRetiro' => $faker -> text(200),
-                'idUsuario' => $faker -> usuario::inRandomOrder()-> value('id') ?: usuario::class,
-                'fechaCreacion' => now,
-                'fechaModificacion' => $faker -> date('d-m-Y', '31-12-2030'),
             ];
         }
     }

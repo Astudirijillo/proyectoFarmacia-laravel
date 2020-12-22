@@ -20,9 +20,7 @@ class CreateProveedorTable extends Migration
             $table->char('correoElectronico',50);
             $table->string('direccion',100);
             $table->char('nroTelefonico',12);
-            $table->unsignedInteger('idUsuario')->constrained('usuario');
-            $table->date('fechaCreacion');
-            $table->date('fechaModificacion');
+            $table->timestamps();
         });
     }
 

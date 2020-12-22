@@ -7,7 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class producto extends Model
 {
+    protected $table = "producto";
     use HasFactory;
     protected $fillable = ['id', 'codProducto', 'marcaComercial', 'nombreCientifico',
-        'idTipoProducto', 'bioequivOpc', 'idFormaFarmaceutica', 'simbolosAsociados'];
+        'idTipoProducto', 'esBioequivalente', 'idFormaFarmaceutica'];
 }

@@ -21,8 +21,6 @@ class EntradaStockResources extends JsonResource
             'cantRecibidas'=>$this.cantRecibida,
             'fechaRecepcion'=>$this.fechaRecepcion,
             'fechaVencimiento'=>$this.fechaVencimiento,
-            'idUsuario'=>$this.idUsuario,
-            'fechaCreacion'=>$this.fechaCreacion,
         ];
     }
 }

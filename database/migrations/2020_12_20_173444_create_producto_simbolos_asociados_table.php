@@ -14,8 +14,9 @@ class CreateProductoSimbolosAsociadosTable extends Migration
     public function up()
     {
         Schema::create('producto_simbolos_asociados', function (Blueprint $table) {
-            $table->unsignedInteger('idProducto')->constrained('producto');
-            $table->unsignedInteger('idSimbolo')->constrained('simbolos_asociados');
+            $table->Integer('idProducto')->constrained('producto');
+            $table->Integer('idSimbolo')->constrained('simbolos_asociados');
+            $table->timestamps();
         });
     }
 

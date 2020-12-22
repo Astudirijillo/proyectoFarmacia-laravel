@@ -19,9 +19,6 @@ class StockProductosResources extends JsonResource
             'codProducto'=>$this.codProducto,
             'undStock'=>$this.rutProveedor,
             'fechaVencimiento'=>$this.fechaVencimiento,
-            'idUsuario'=>$this.idUsuario,
-            'fechaCreacion'=>$this.fechaCreacion,
-            'fechaModificacion'=>$this.fechaModificacion,
         ];
     }
 }

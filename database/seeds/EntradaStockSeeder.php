@@ -23,8 +23,6 @@ class EntradaStockSeeder extends Seeder
                 'cantRecibida' => $faker -> randomDigit(1)*150,
                 'fechaRecepcion' => now(),
                 'fechaVencimiento' => $faker -> date('d-m-Y', '31-12-2030'),
-                'idUsuario' => "$index",
-                'fechaCreacion' => now(),
             ];
         }
     }

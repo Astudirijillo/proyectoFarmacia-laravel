@@ -18,6 +18,7 @@ class CreateSimbolosAsociadosTable extends Migration
             $table->char('codigo',5);
             $table->char('tipo',50);
             $table->char('descripcion',5);
+            $table->timestamps();
         });
     }
 

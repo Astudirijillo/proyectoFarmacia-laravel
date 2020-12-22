@@ -10,7 +10,7 @@ class RetiroStockController extends Controller
 {
     public function index()
     {
-        $retiroStock = RetiroStock::orderBy('id') -> get();
+        $retiroStock = RetiroStock::orderBy('codProducto') -> get();
         return RetiroStockResources::collection($retiroStock);
     }
 
@@ -26,8 +26,6 @@ class RetiroStockController extends Controller
             'cantRetiro' => 'required|min:1',
             'fechaRetiro' => 'required|date',
             'motivoRetiro' => 'required|max:100',
-            'idUsuario' => 'required|integer',
-            'fechaCreacion' => 'required|date'
         ]);
     }
 

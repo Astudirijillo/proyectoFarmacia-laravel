@@ -20,9 +20,8 @@ class ProductoResource extends JsonResource
             'marcaComercial'=>$this->marcaComercial,
             'nombreCientifico'=>$this->nombreCientifico,
             'idTipoProducto'=>$this->idTipoProducto,
-            'bioequivOpc'=>$this->bioequivOpc,
+            'esBioequivalente'=>$this->esBioequivalente,
             'idFormaFarmaceutica'=>$this->idFormaFarmaceutica,
-            'simbolosAsociados'=>$this->simbolosAsociados,
         ];
     }
 }
